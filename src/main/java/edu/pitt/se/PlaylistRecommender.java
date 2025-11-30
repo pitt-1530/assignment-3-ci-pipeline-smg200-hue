@@ -36,18 +36,18 @@ public class PlaylistRecommender {
         char chatTitle[] = title.toCharArray();
 
         for(int i = 0; i < chatTitle.length; i++){
-            if(chatTitle[i] == '\0' || !(!(Character.isLetter(chatTitle[i])))){
-                return false;
-            }
-            else{
-                if(Character.isLetter(chatTitle[i]) || Character.isWhitespace(chatTitle[i])){
+            if(Character.isLetter(chatTitle[i]) || Character.isWhitespace(chatTitle[i])){
                     continue;
                 }
+            else{
+                return false;
             }
         }
+
         if(chatTitle.length > 30){
             return false;
         }
+        
         return true;
     }
 
