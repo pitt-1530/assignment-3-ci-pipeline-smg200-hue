@@ -21,15 +21,15 @@ public class PlaylistRecommenderTest {
 
     }
 
-    // @Test
-    // public void testValidTitle() {
-    //     String title = "software enginerring";
+    @Test
+    public void testValidTitle() {
+        String title = "software enginerring";
 
-    //     boolean result = PlaylistRecommender.isValidTrackTitle(title);
+        boolean result = PlaylistRecommender.isValidTrackTitle(title);
 
-    //     assertTrue(result);
+        assertTrue(result);
 
-    // }
+    }
 
     @Test
     public void testNormalizeVolume() {
