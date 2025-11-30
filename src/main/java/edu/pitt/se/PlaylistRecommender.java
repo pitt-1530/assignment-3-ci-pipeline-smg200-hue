@@ -36,7 +36,7 @@ public class PlaylistRecommender {
         char chatTitle[] = title.toCharArray();
 
         for(int i = 0; i < chatTitle.length; i++){
-            if(chatTitle[i] == '\0' || !(Character.isLetter(chatTitle[i]))){
+            if(chatTitle[i] == '\0' || !(!(Character.isLetter(chatTitle[i])))){
                 return false;
             }
             else{
